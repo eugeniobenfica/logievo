@@ -1,0 +1,14 @@
+# What the model can do, one command per line: names (separated by |) = what to do.
+# A target is opened (a program, a file, a folder or a link, %VARIABLES% expanded), or with
+# "run: program arguments" that command line is run. Class 1 is the first line, and so on;
+# class 0 is "do nothing". generate.py makes the training sentences from these names.
+bloco de notas | notepad | notas | editor de texto = notepad.exe
+calculadora | calculator | calc = calc.exe
+paint | programa de desenho = mspaint.exe
+explorador de arquivos | gerenciador de arquivos | file explorer | explorer = explorer.exe
+documentos | meus documentos | pasta de documentos | documents = %USERPROFILE%\Documents
+downloads | pasta de downloads | baixados = %USERPROFILE%\Downloads
+terminal | prompt de comando | cmd | linha de comando = run: cmd.exe /k cd /d %USERPROFILE%
+navegador | internet | browser | google = https://www.google.com
+gerenciador de tarefas | task manager = taskmgr.exe
+configuracoes | configurações | ajustes | settings = ms-settings:
